@@ -1,0 +1,61 @@
+.form-container {
+    background-color: #2C2C2E;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.input-feild{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.input-feild>label {
+    text-align: left;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.input-feild>input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    border-bottom: 1px solid  white;
+}
+
+.errormessage {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  
+}
+
+.submit-wrapper {
+    padding-top: 40px;
+}
+.submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: filter 0.3s ease-in-out;
+}
+
+.submit:hover {
+    filter: drop-shadow(0 0 10px rgba(98, 145, 196, 0.6)); /* Blue glow */
+  }
