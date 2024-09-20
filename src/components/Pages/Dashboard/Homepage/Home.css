@@ -1,0 +1,39 @@
+.home {
+    width: 100%;
+}
+
+.home-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+.home-card-wrapper {
+    background-color: #2C2C2E;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.homecrad-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.homecrad-left>span:nth-child(1) {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.homecrad-left>span:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+}

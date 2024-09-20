@@ -1,0 +1,228 @@
+.task{
+   width: 100%;
+}
+
+.task-head{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task-head-buuton {
+  padding: 12px;
+  width: 180px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-head-buuton:hover {
+    filter: drop-shadow(0 0 10px rgba(98, 145, 196, 0.8)); /* Blue glow */
+  }
+
+.no-data {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.task-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 72px;
+}
+
+.task-card {
+    background-color: #2C2C2E;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.task-card-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-card-title{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.task-card-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.task_icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.task-card-footer {
+    text-align: left;
+    padding-top: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden; /* Ensures the overflow text does not go beyond the container */
+    text-overflow: ellipsis; /* Adds ellipsis (...) when the text overflows */
+    word-wrap: break-word; /* Breaks long words if needed */
+    max-height: 50px; /* Limits the height if needed */
+    line-height: 1.2em;
+}
+.line {
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+}
+.task-card-status {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-status {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.status-icon-conatiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.status-icon-conatiner>span {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.status-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.task-togle-conatiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.task-clickhere {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.task-toggl {
+    cursor: pointer;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .toggle-slot {
+    font-size: 10px;
+    position: relative;
+    height: 3.5em;
+    width: 7em;
+    border: 0px solid transparent;
+    border-radius: 10em;
+    background-color: white;
+    transition: background-color 250ms;
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot {
+    background-color: #374151;
+  }
+  
+  .toggle-button {
+    transform: translate(0.3em, 0.25em);
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: #ffeccf;
+    box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+    background-color: #485367;
+    box-shadow: inset 0px 0px 0px 0.75em white;
+    transform: translate(3.65em, 0.25em);
+  }
+  
+  .sun-icon {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    color: #ffbb52;
+  }
+  
+  .sun-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(15deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+    transform: translate(3em, 2em) rotate(0deg);
+  }
+  
+  .moon-icon {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    color: white;
+  }
+  
+  .moon-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 0;
+    transform: translate(11em, 2em) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(-15deg);
+  }
